@@ -1,0 +1,23 @@
+{
+    "table": {
+        "Cores": {
+            "type": "int",
+            "pattern": "Cores\\s(\\d+)",
+            "repeatable": false
+        },
+        "Wall time": {
+            "type": "float",
+            "pattern": "Calc time:\\s([\\d.]+)",
+            "repeatable": true
+        }
+    },
+    "plot": {
+        "kind": "line",
+        "marker": "o",
+        "x": "Cores",
+        "y": "Wall time",
+        "x_label": "Cores",
+        "y_label": "Second",
+        "title": "sampleOut Parallel plot"
+    }
+}
